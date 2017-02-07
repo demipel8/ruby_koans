@@ -28,7 +28,6 @@ class AboutSingleton < Neo::Koan
     assert_equal __(true), ex.is_a?(StandardError), "Should be a Standard Error"
     assert_equal __(true), ex.is_a?(NoMethodError),  "Should be a NoMethodError Error"
 
-    assert_equal __("private method `new' called for AboutSingleton::SingletonClass:Class"
-), ex.message
+    assert_equal __("private method `new' called for AboutSingleton::SingletonClass:Class"), ex.message
   end
 end
